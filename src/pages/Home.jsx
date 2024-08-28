@@ -7,14 +7,14 @@ const HomePage = () => {
   return (
     <div className="h-auto bg-gray-900 text-white overflow-hidden">
       {/* Hero Section */}
-      <div className="relative flex items-center justify-center gap-8 p-28 bg-gray-800 rounded-lg shadow-lg m-10">
+      <div className="relative flex flex-col lg:flex-row items-center justify-center gap-8 p-8 lg:p-24 bg-gray-800 rounded-lg shadow-lg m-4 lg:m-10">
         <div className="w-full lg:w-4/6 animate-fadeInLeft">
-          <h1 className="font-bold text-4xl lg:text-6xl mb-4 animate-fadeIn">Your Satisfaction is Our Commitment to Excellence in Bus Services</h1>
+          <h1 className="font-bold text-3xl lg:text-6xl mb-4 animate-fadeIn">Your Satisfaction is Our Commitment to Excellence in Bus Services</h1>
           <p className="text-lg lg:text-xl">
             Experience top-notch bus services designed for your convenience and reliability. Join us for a seamless travel experience with our advanced tools and support.
           </p>
         </div>
-        <div className="animate-slideIn">
+        <div className="w-full lg:w-auto animate-slideIn mt-8 lg:mt-0">
           <img
             src="https://media.istockphoto.com/id/135327019/fr/photo/passager-bus-blanc.jpg?s=612x612&w=0&k=20&c=QhGhp3XT74KwRnJXKHVrFUaAiuf8Pqcor3lo4BV7hlc="
             alt="Bus"
@@ -24,7 +24,7 @@ const HomePage = () => {
       </div>
 
       {/* Feature Highlights */}
-      <div className="p-6 bg-gray-800 rounded-lg shadow-lg m-10">
+      <div className="p-6 lg:p-10 bg-gray-800 rounded-lg shadow-lg m-4 lg:m-10">
         <h2 className="text-3xl font-bold mb-6 text-center">Why Choose Us?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="flex items-start space-x-4">
@@ -59,8 +59,8 @@ const HomePage = () => {
       </div>
 
       {/* Call-to-Action */}
-      <div className="bg-gray-800 text-white rounded-lg shadow-lg p-6 m-10">
-        <h2 className="text-3xl font-bold mb-4 text-center">Ready to Experience Top-Quality Bus Services?</h2>
+      <div className="bg-gray-800 text-white rounded-lg shadow-lg p-6 lg:p-10 m-4 lg:m-10">
+        <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-center">Ready to Experience Top-Quality Bus Services?</h2>
         <p className="text-lg mb-4 text-center">
           Discover the convenience and reliability of our bus services today. Explore our routes, book your trip, and enjoy a smooth journey.
         </p>
@@ -72,7 +72,7 @@ const HomePage = () => {
       </div>
 
       {/* Main Content Section */}
-      <div className="p-6 space-y-12">
+      <div className="p-6 lg:p-10 space-y-12">
         {/* RouteDetails Component */}
         <div className="bg-gray-800 rounded-lg shadow-lg p-6 relative">
           <div className="absolute top-0 right-0 p-4">
@@ -99,13 +99,13 @@ const HomePage = () => {
 
         {/* Navigation Directions */}
         <div className="bg-gray-900 text-white rounded-lg shadow-lg p-6">
-          <h2 className="text-3xl font-bold mb-4 text-center">Navigate Our Website Easily</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-center">Navigate Our Website Easily</h2>
           <p className="text-lg mb-4 text-center">
             Ready to explore more? Use the following links to navigate our website and access the features that best suit your needs:
           </p>
           <ul className="list-disc list-inside space-y-2">
             <li><a href="/services" className="text-green-500 hover:underline">Explore Our Services</a></li>
-            <li><a href="/contact" className="text-blue-500 hover:underline">parth</a></li>
+            <li><a href="/contact" className="text-blue-500 hover:underline">Contact Us</a></li>
             <li><a href="/about" className="text-yellow-500 hover:underline">Learn About Us</a></li>
           </ul>
         </div>

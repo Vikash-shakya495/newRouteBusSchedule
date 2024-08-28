@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import ReactDOM from "react-dom/client";
 import './index.css';
+import Contact from '../pages/Contact';
 
-let root = ReactDOM.createRoot(document.querySelector("div.main"));
-
-const ContactUs = () => {
+const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -120,8 +119,4 @@ const ContactUs = () => {
 };
 
 
-root.render(
-  <>
-    <ContactUs/>
-  </>
-);
+export default Contact

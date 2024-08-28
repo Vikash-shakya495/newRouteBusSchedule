@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactDOM from "react-dom/client";
+import './index.css';
 
 const teamMembers = [
   {
@@ -78,5 +80,6 @@ const About = () => {
     </div>
   );
 };
+
 
 export default About;
