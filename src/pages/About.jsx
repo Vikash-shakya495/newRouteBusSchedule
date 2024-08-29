@@ -41,7 +41,7 @@ const teamMembers = [
 
 const About = () => {
   return (
-    <div className="bg-[#1F2937] py-8 sm:py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-[#1F2937] py-8 sm:py-16 px-12 sm:px-6 lg:px-8 mt-8">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="font-semibold text-[#FBBF24] tracking-wide uppercase text-2xl sm:text-4xl">
           Our Team

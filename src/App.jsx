@@ -1,21 +1,11 @@
 // src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import Layout from './pages/Layout';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Blogs from './pages/Blogs';
-import Services from './pages/Services';
-import Booking from './pages/Booking';
-import BlogDetails from './pages/BlogDetails';
-import Login from './loginSystem/Login';
-// import Signup from './loginSystem/Signup';
-import AdminLogin from './loginSystem/AdminLogin';
-import ForgotPassword from './loginSystem/ForgotPassword';
-import AdminDashboard from './loginSystem/AdminDashboard';
-import PassengerFeedback from './improvement/passengerFeedback';
-import FAQ from './improvement/FAQ';
+import { BusSchedule, ETA, RouteDetails, SearchBusStop, TrackBus, TripPlanner } from './components';
+import { AdminDashboard, AdminLogin, CrewLogin, ForgotPassword, Login } from './loginSystem';
+import { About, Booking, BlogDetails, Blogs, Contact, Footer, Home, Layout, Navbar, Services } from './pages';
+import { FAQ, PassengerFeedback } from './improvement';
+import CrewDashboard from './loginSystem/CrewDashboard';
 
 function App() {
   return (
@@ -27,6 +17,8 @@ function App() {
         <Route path="/admin" element={<AdminLogin />} />
         <Route path="/admin/adminDashboard" element={<AdminDashboard />} />
         <Route path="/forgot" element={<ForgotPassword />} />
+        <Route path="/crew" element={<CrewLogin />} />
+        <Route path="/crew/crewDashboard" element={<CrewDashboard />} />
 
 
         {/* Route for pages with Navbar and Footer */}
